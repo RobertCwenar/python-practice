@@ -1,4 +1,5 @@
-# Słownik w liście - ćwiczenia
+# Dictionary and List Examples - excercise
+# Create dictionary examples in Python 
 
 people = {
         "IcFDG2bO9AYDF651DoyH": {'name': 'John', 'age': 27, 'sex': 'Male'},
@@ -24,7 +25,7 @@ people2 = [
          {'id': 'yDlgcn99xPc19mYXcRmy', 'name': 'Agness', 'age': 25, 'sex': 'Female'}               
         ]
 
-
+# Create list examples in Python
 people3 = ['Robert', 
             'Dawid', 
             'Anna',
@@ -52,7 +53,7 @@ people5 = {
             "Id9": {'name': 'Piotrek', 'car': 'Opel', 'girlfriend': 'Zofia'}, 
             "Id10": {'name': 'Magda', 'car': 'Hyundai', 'boyfriend': 'Kamil'},
             }
-
+# Create ratings1 examples 
 ratings1 = {
         "Arkadiusz": (2,1,2,3,2,3),
         "Wiola": (4,2,1,3,4),
@@ -60,16 +61,19 @@ ratings1 = {
         "Gosia": (5,6,2,3,1)
     }
 
+# Create ratings2 examples
 ratings2 = [
         {"name": "Arkadiusz", "ratings": (2,1,2,3,2,3), 'behavior': 4},
         {"name": "Agness", "ratings": (4,2,1,3,4), 'behavior': 2}
     ]
-
+# Create ratings3 examples
 ratings3 = {
         "Arkadiusz": {'ratings': (2,1,2,3,2,3), 'behavior': 4},
         "Agness": {'ratings': (4,2,1,3,4), 'behavior': 2}
     }
 
+
+# Loop for different data structures
 """
 for key in ratings1:
     print(f"{key} ratings: (ratings[key])")
