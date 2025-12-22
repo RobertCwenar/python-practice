@@ -1,12 +1,24 @@
-# Practise Python 
 
+# Python Learning and Practice / Nauka Pythona
 
-# How this it work
-This repository is intended for testing and learning new Python concepts and structures.
-------------------------------------------------------------------------------------------
-Repozytorium będzie służyło do testowania i uczenia się nowych elementów
-w języku Python. 
+This repository contains exercises and mini-projects dedicated to learning Python for data analysis and programming concepts.
 
-I will commit exercises here as I practice Python.
-------------------------------------------------------------------------------------------
-Będę commitował tutaj zadania, w których będę ćwiczył kod w Pythonie.
+## Purpose / Cel
+The goal of this repository is to practice and explore Python, with a focus on data analysis, problem-solving, and practical programming skills.  
+Repozytorium służy do ćwiczeń i nauki Pythona, szczególnie w kontekście analizy danych.
+
+## Skills and Tools Practiced / Umiejętności i narzędzia
+- Python basics: loops, conditions, functions
+- Data manipulation with Pandas and NumPy
+- SQL queries and data extraction
+- Data visualization with Matplotlib and Seaborn
+- Problem-solving and coding exercises
+
+## Structure / Struktura repozytorium
+- `Python_basics/` – exercises to practice Python syntax and logic
+- `Data_analysis/` – small projects using Pandas, NumPy, CSV/Excel
+
+## Notes / Notatki
+All exercises and projects are part of my continuous learning process and demonstrate my growing skills in Python programming and data analysis.  
+Wszystkie projekty i ćwiczenia pokazują moje postępy w nauce Pythona i w analizie danych.
+
