@@ -21,4 +21,3 @@ Repozytorium służy do ćwiczeń i nauki Pythona, szczególnie w kontekście an
 ## Notes / Notatki
 All exercises and projects are part of my continuous learning process and demonstrate my growing skills in Python programming and data analysis.  
 Wszystkie projekty i ćwiczenia pokazują moje postępy w nauce Pythona i w analizie danych.
-
