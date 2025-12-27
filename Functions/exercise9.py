@@ -44,6 +44,10 @@ while True:
     if cont == 'no':
         print("Exiting the program.")
         break
+    
+    if cont == 'yes':
+        print("Continue the program.")
+        continue
 
     if choice == "3" or choice.lower() == "triangle":
         def area_of_triangle(base, height):
