@@ -1,6 +1,9 @@
 # Write a program that calculates the sum of all numbers from 1 to a given number n entered by the user.
 # For example, for 5 the program should return 15 (1+2+3+4+5).
 
+# Add library time
+import time
+
 # Function to calculate the sum from 1 to n
 def sum_to_n(n):
     sum = 0
@@ -24,6 +27,11 @@ def test3_sum_to_n(n):
 def test4_sum_to_n(n):
    return (1 + n)/ 2 * n
 
+# Function to measure time taken by each function
+def finish_timer(start):
+    end = time.perf_counter()
+    return end - start
+
 # Main program
 if __name__ == "__main__":
     n = int(input("Enter a number n: "))
@@ -33,8 +41,25 @@ if __name__ == "__main__":
     result4 = test3_sum_to_n(n)
     result5 = test4_sum_to_n(n)
 
-    print(f"Sum of consecutive numbers from 1 to {n} is: {result1}")
-    print(f"Test 1 result: {result2}")
-    print(f"Test 2 result: {result3}")
-    print(f"Test 3 result: {result4}")
-    print(f"Test 4 result: {result5}")
+
+# Checking time taken by each function using time library
+
+start = time.perf_counter()
+print(f"Sum of consecutive numbers from 1 to {n} is: {result1}")
+print(f"Time taken by main function: {finish_timer(start)} seconds")
+
+start = time.perf_counter()
+print(f"Test 1 result: {result2}")
+print(f"Time taken by test 1 function: {finish_timer(start)} seconds")
+
+start = time.perf_counter()
+print(f"Test 2 result: {result3}")
+print(f"Time taken by test 2 function: {finish_timer(start)} seconds")
+
+start = time.perf_counter()
+print(f"Test 3 result: {result4}")
+print(f"Time taken by test 3 function: {finish_timer(start)} seconds")
+
+start = time.perf_counter()
+print(f"Test 4 result: {result5}")
+print(f"Time taken by test 4 function: {finish_timer(start)} seconds")
