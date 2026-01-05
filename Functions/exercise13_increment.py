@@ -11,7 +11,7 @@ def great(name, message, separator=" "):
     print(message, name, sep=separator)
 
 great(message="Hello in Python", name="Krzysztof")  # Should print: Hello Krzysztof, Hello in Python
-'''
+
 # library time
 import time 
 
@@ -53,3 +53,17 @@ print(f"Number {element_in_set}:", set_result, "\nand the Time taken is:", set_t
 list_result = check_element(element_in_list, listContainer)
 list_time = function_performance(check_element, 1, element_in_list, listContainer)
 print(f"Number {element_in_list}:", list_result, "\nand the Time taken is:", list_time)
+'''
+
+
+# Write a function that, for example, when called:
+# print(count(2,4,1,2,4,5, 10))
+# shows as result: 28 for sum of all arguments
+
+def count(*args):
+    total =0
+    for num in args:
+        total += num 
+    return total 
+
+print(count(2,4,1,2,4,5, 11))  # Should print 28
