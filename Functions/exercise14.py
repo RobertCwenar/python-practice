@@ -36,7 +36,7 @@ def append_to_list(some_list, value):
 print(id(listSample))
 append_to_list(listSample, 5)
 print(listSample)
-
+'''
 
 # lambda functions
 
@@ -45,20 +45,20 @@ def double(x):
 
 print(double(5))
 
-my_list = [2, 5, 13, 17, 8, 10, 100, 34, 23]
+my_list = [2, 5, 13, 17, 8, 10, 100, 34, 23, 44]
 
 def even_number(x):
    if x % 2 == 0:
         return x
 
-my_new_list_filtered = list(filter(even_number, my_list))
-my_new_list_filtered2 = (x for x in my_list if x % 2 == 0)
+my_new_list_filtered = list(filter(lambda x: x % 2 ==0 , my_list))
+my_new_list_filtered2 = [x for x in my_list if x % 2 == 0]
 print(my_new_list_filtered)
 
 print(my_new_list_filtered2)
 
 
-
+'''
 # exercise 14.1 
 data = [[1, 2], [3, 4], [5, 6]]
 
@@ -121,7 +121,7 @@ print(type(gen_even))
 print(list(gen_even))
 
 print(type(list_even))
-print(list_even)'''
+print(list_even)
 
 # exercise 14.5
 
@@ -138,4 +138,4 @@ map1 = map(lambda x: x*2, filter1)
 
 gen_even = (x for x in map1)
 
-print(list(gen_even))
+print(list(gen_even))'''
