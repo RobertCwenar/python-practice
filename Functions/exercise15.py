@@ -41,10 +41,9 @@ b = a.copy()
 
 b[0].append(100)
 print(a)
-'''
 
 # exercise 15.4
-# Użj funkcji any() aby określicz czy lista ma liczby parzyste
+# Użj funkcji any() aby określić czy lista ma liczby parzyste
 
 numbers1 = [1, 3, 5, 7, 9]
 numbers2 = [1, 2, 3, 4, 5]
@@ -75,5 +74,39 @@ if (any_even(numbers3)):
 else:
     print("Lista numbers3 nie ma liczb parzystych")
 
-# any - jakikolwiek e- funkcja any Sprawdza czy jakikolwiek element w iterowalnym jest prawdziwy
+# any - jakikolwiek - funkcja any SPRAWDZA czy jakikolwiek element w iterowalnym jest prawdziwy
 
+
+# exercise 15.5
+# Użyj funkcji all() do określenia, czy osoba posiada wymagany zestaw umiejętności.
+
+def has_required_skills(person, skills):
+    return all (skill in person['skills'] for skill in skills)
+
+# Dictionaries representing people with their skills
+
+John = {'name': 'John Doe', 'age': 30, 'skills': ['Python', 'JavaScript', 'C++']}
+
+Filip = {'name': 'Filip Page', 'age': 25, 'skills': ['Java', 'C#', 'Python']}
+
+Michał = {'name': 'Michał Kowalski', 'age': 28, 'skills': ['Python', 'JavaScript', 'Java', 'C#']}
+
+# Required skills
+Required_skills = ['Python', 'JavaScript']
+
+
+# Output results
+print(has_required_skills(John, Required_skills))
+
+print(has_required_skills(Filip, Required_skills))  
+
+print(has_required_skills(Michał, Required_skills)) 
+'''
+
+# exercise 15.6
+
+tasks = ['turning on the washing machine', 'cleaning my room', 'making dinner', 'doing the shopping']
+
+
+for index, task in enumerate(tasks, start=1):
+    print(f"Task {index}: {task.capitalize()}")
