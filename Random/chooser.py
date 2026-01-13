@@ -21,13 +21,13 @@ import random
 
 # variables 
 
-suits = ["♠", "♥", "♦", "♣"]
+signs = ["♠", "♥", "♦", "♣"]
 card_lists = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
 
 # Loop for 
-deck = [card + suit for suit in suits for card in card_lists]
+deck = [card + sign for sign in signs for card in card_lists]
 
-round_number = 1 
+round_number = 0
 while round_number <= len(deck) >= 10:
     player1 =[deck.pop() for _ in range(5)] 
     player2 = [deck.pop() for _ in range(5)]
@@ -39,9 +39,15 @@ while round_number <= len(deck) >= 10:
     print(f"Runda: {round_number}")
     print(player1)
     print(player2)
+    print(f"Cards is: {len(deck)}")
+
+# Add the ask about continue
+    play_again = input(f"Do you want continue? y/n: ").lower()
+    if play_again != 'y':
+        print("Game stopped!")
+        break
 
 print(f"Cards left: {len(deck)} -> {deck}")
-
 
 """
 import random
