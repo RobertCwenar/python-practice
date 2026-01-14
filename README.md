@@ -17,6 +17,7 @@ Repozytorium służy do ćwiczeń i nauki Pythona, szczególnie w kontekście an
 - `Basic Operations/` – exercises to practice Python syntax and logic
 - `Containers/` – exercises to practice list, tuple, set and dictionary
 - `Functions/` -exercises to practice definition
+- `Random/` -exercises to practise random functions
 
 ## Notes / Notatki
 All exercises and projects are part of my continuous learning process and demonstrate my growing skills in Python programming and data analysis.  
